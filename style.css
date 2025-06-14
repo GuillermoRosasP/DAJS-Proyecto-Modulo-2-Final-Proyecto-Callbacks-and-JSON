@@ -1,0 +1,22 @@
+/*
+🧠 Lógica principal del CSS
+Define estilos para layout, tarjetas, botones y estado oculto.
+*/
+
+/* Paso 1: Layout */
+body { font-family: Arial, sans-serif; margin: 20px; }
+h1 { text-align: center; }
+.columnas { display: flex; justify-content: space-between; margin-top: 20px; }
+
+/* Paso 2: Columnas y tarjetas */
+.columna { flex: 1; margin: 0 10px; }
+.columna h2 { text-align: center; }
+.tarjeta { border: 1px solid #ccc; border-radius: 8px; padding: 10px; margin-bottom: 10px; }
+
+/* Paso 3: Botones */
+button { padding: 5px 10px; margin-top: 5px; cursor: pointer; }
+
+/* Paso 4: Formulario oculto */
+.oculto { display: none; }
+#formulario { margin-top: 20px; }
+#formulario input { display: block; margin: 5px 0; padding: 5px; width: 100%; }

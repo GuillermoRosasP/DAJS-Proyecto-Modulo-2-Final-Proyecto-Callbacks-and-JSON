@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biblioteca Pública</title>
+  <!-- Vincula los estilos y el script -->
+  <link rel="stylesheet" href="style.css"> <!-- style.css: archivo de estilos CSS -->
+  <script defer src="app.js"></script> <!-- app.js: archivo con lógica JavaScript -->
+</head>
+<body>
+  <h1>Biblioteca Pública</h1>
+  <button onclick="mostrarFormulario()">Añadir libro</button>
+
+  <!-- Formulario de ingreso de libros (oculto por defecto) -->
+  <form id="formulario" class="oculto" onsubmit="event.preventDefault(); agregarLibro();">
+    <input id="titulo" type="text" placeholder="Título" />
+    <input id="autor" type="text" placeholder="Autor" />
+    <input id="genero" type="text" placeholder="Género" />
+    <button type="submit">Guardar libro</button>
+    <button type="button" onclick="cancelarFormulario()">Cancelar</button>
+  </form>
+
+  <!-- Contenedores para mostrar libros -->
+  <div class="columnas">
+    <div id="disponible" class="columna">
+      <h2>Disponible</h2>
+    </div>
+    <div id="prestado" class="columna">
+      <h2>Prestado</h2>
+    </div>
+    <div id="inventario" class="columna">
+      <h2>Inventario</h2>
+    </div>
+  </div>
+</body>
+</html>
